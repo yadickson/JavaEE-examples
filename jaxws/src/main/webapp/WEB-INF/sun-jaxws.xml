@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<endpoints version="2.0" xmlns="http://java.sun.com/xml/ns/jax-ws/ri/runtime">
+  <endpoint implementation="org.sotux.jaxws.ws.model.service.CalculatorService" name="CalculatorService" url-pattern="/CalculatorService"/>
+  <endpoint implementation="org.sotux.jaxws.ws.model.service.GreetingService" name="GreetingService" url-pattern="/GreetingService"/>
+  <endpoint implementation="org.sotux.jaxws.ws.model.service.MiniBankService" name="MiniBankService" url-pattern="/MiniBankService"/>
+</endpoints>

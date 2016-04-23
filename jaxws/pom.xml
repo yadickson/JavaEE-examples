@@ -1,0 +1,89 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.sotux.test.jaxws</groupId>
+    <artifactId>jaxws</artifactId>
+    <version>1.0</version>
+    <packaging>war</packaging>
+
+    <name>jaxws</name>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.sun.xml.ws</groupId>
+            <artifactId>jaxws-rt</artifactId>
+            <version>2.2.10</version>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>2.3.2</version>
+                <configuration>
+                    <source>1.6</source>
+                    <target>1.6</target>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-war-plugin</artifactId>
+                <version>2.1.1</version>
+                <configuration>
+                    <failOnMissingWebXml>true</failOnMissingWebXml>
+                </configuration>
+            </plugin>
+            <!--plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>jaxws-maven-plugin</artifactId>
+                <version>1.12</version>
+                <executions>
+                    <execution>
+                        <id>CalculatorService</id>
+                        <configuration>
+                            <sei>org.sotux.jaxws.ws.model.service.CalculatorServiceImpl</sei>
+                        </configuration>
+                        <goals>
+                            <goal>wsgen</goal>
+                        </goals>
+                    </execution> 
+                    <execution>
+                        <id>MiniBankService</id>
+                        <configuration>
+                            <sei>org.sotux.jaxws.ws.model.service.MiniBankServiceImpl</sei>
+                        </configuration>
+                        <goals>
+                            <goal>wsgen</goal>
+                        </goals>
+                    </execution> 
+                    <execution>
+                        <id>GreetingService</id>
+                        <configuration>
+                            <sei>org.sotux.jaxws.ws.model.service.GreetingServiceImpl</sei>
+                        </configuration>
+                        <goals>
+                            <goal>wsgen</goal>
+                        </goals>
+                    </execution> 
+                </executions>
+                <configuration>
+                    <sourceDestDir>${project.build.directory}/generated-sources/wsgen</sourceDestDir>
+                </configuration>
+            </plugin-->
+        </plugins>
+    </build>
+
+</project>
