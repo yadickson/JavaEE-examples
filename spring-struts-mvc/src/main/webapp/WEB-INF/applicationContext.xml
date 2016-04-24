@@ -1,0 +1,12 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+
+    <bean id="addAccountAction" class="org.sotux.strutsmvc.web.action.AddAccountAction">
+        <property name="accountDao" >
+            <bean id="AccountDao" class="org.sotux.strutsmvc.model.dao.impl.AccountDaoImpl" />
+        </property>
+    </bean>
+    
+</beans>

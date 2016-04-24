@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+ 
+<struts>
+    
+    <constant name="struts.i18n.reload" value="true" />
+    <constant name="struts.custom.i18n.resources" value="properties.globals" />
+    <constant name="struts.devMode" value="false" />
+
+    <package name="pages" extends="struts-default">
+        <action name="newAccountPage">
+            <result>/jsp/new-account.jsp</result>
+        </action>
+        <action name="addAccountPage">
+            <result>/jsp/add-account.jsp</result>
+        </action>
+    </package>
+
+    <package name="actions" extends="struts-default">
+        <action name="mainMenuAction" 
+                class="org.sotux.strutsmvc.web.action.MainMenuAction" 
+                method="execute">
+            <result name="success">/jsp/main-menu.jsp</result>
+        </action>
+        <action name="newAccountAction" 
+                class="org.sotux.strutsmvc.web.action.NewAccountAction" 
+                method="execute">
+            <result name="success">/jsp/new-account-success.jsp</result>
+            <result name="input">/jsp/new-account.jsp</result>
+        </action>
+        
+         <!-- DI from spring -->
+        <action name="addAccountAction" 
+                class="addAccountAction"
+                method="execute">
+            <result name="success">/jsp/add-account-success.jsp</result>
+        </action>
+    </package>
+    
+</struts>
