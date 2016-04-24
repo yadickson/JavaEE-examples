@@ -2,12 +2,12 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>org.sotux.test.springws</groupId>
-    <artifactId>jaxws-springws</artifactId>
+    <groupId>org.sotux.springws</groupId>
+    <artifactId>spring-jaxws</artifactId>
     <version>1.0</version>
     <packaging>war</packaging>
 
-    <name>jaxws-springws</name>
+    <name>spring-jaxws</name>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
