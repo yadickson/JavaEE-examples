@@ -43,7 +43,7 @@ psql> \l
 ```
 psql> \i <fullpath sql file>
 ```
-**connecte to database*
+**connecte to database**
 ```
 psql> \c <database>
 ```
