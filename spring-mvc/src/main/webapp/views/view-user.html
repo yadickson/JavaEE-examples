@@ -1,0 +1,10 @@
+
+<div>Detalle Usuario</div>
+
+<form name="userInfo">
+        <label>Nombre</label><input id="name" type="text" data-ng-model="user.name" data-ng-required /><br/>
+        <label>Email</label><input id="email" type="text" data-ng-model="user.email" data-ng-required /><br/>
+        <input type="button" value="Editar" data-ng-click="edit()" data-ng-disabled="disableEditButton()"/>
+        <input type="button" value="Eliminar" data-ng-click="delete()" />
+</form>
+
