@@ -5,57 +5,72 @@
  $ mysql -u<user> -p<password>
 ```
 **list users**
- SELECT USER FROM mysql.user;
-
+```
+mysql> SELECT USER FROM mysql.user;
+```
 **show databases**
- show databases;
-
+```
+mysql> show databases;
+```
 **run external sql file**
- \. <fullpath sql file>
-
+```
+mysql> \. <fullpath sql file>
+```
 **connecte to database**
- use <database>;
-
+```
+> use <database>;
+```
 #PostgreSQL
 
 **login postgresql user**
- sudo su
- su postgres
-
+```
+$ sudo su
+$ su postgres
+```
 **console**
- $ psql
-
+```
+$ psql
+```
 **list users**
- \du
-
+```
+psql> \du
+```
 **show databases**
- \l
-
+```
+psql> \l
+```
 **run external sql file**
- \i <fullpath sql file>
-
+```
+psql> \i <fullpath sql file>
+```
 **connecte to database*
- \c <database>
-
+```
+psql> \c <database>
+```
 **create database and user**
- \i <>/admin.sql
-
+```
+psql> \i <>/admin.sql
+```
 **exit normal user and create tables**
 ```
 $ psql -h localhost -d health_insurance -U insurance
 ```
- \i <>/structure.sql
-
+```
+psql> \i <>/structure.sql
+```
 #For Oracle
 
 **install**
-(Debian process)[http://www.javavault.it/2015/01/27/install-oracle-11g-xe-on-debian/]
+
+[Debian process](http://www.javavault.it/2015/01/27/install-oracle-11g-xe-on-debian/)
 
 **console**
- $ sqlplus / as sysdba
- @<>/admin.sql
-
- $sqlplus insurance/insurance
- @<>/structure.sql
-
+```
+$ sqlplus / as sysdba
+sqlplus> @<>/admin.sql
+```
+```
+$ sqlplus insurance/insurance
+sqlplus>  @<>/structure.sql
+```
 Enjoy
