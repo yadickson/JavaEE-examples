@@ -22,13 +22,13 @@
 - oracle
 
 **dependency**
-
- mvn dependency:tree
-
+```
+$ mvn dependency:tree
+```
 **build**
-
- mvn clean package
-
+```
+$ mvn clean package
+```
 **config tomcat to deploy**
 
  edit **/etc/tomcat7/tomcat-users.xml**
@@ -58,7 +58,7 @@
 ```
 
 **deploy**
-
- mvn -P<profile> tomcat7:redeploy
-
+```
+$ mvn -P<profile> tomcat7:redeploy
+```
 
