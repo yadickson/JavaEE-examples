@@ -33,7 +33,7 @@
 
  edit **/etc/tomcat7/tomcat-users.xml**
 
-```
+``` xml
 <tomcat-users>
  ...
     <role rolename="manager-gui"/>
@@ -46,7 +46,7 @@
 
  edit **/etc/maven/settings.xml**
 
-```
+``` xml
 <servers>
  ...
     <server>
